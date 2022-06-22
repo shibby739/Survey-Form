@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please fill out this survey form!</p>
+    </div>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter your name: <input type="text" id="name" class="field" name="name" placeholder="Please enter first and last name" required /></label>
+        <label id="email-label">Enter your email: <input type="email" id="email" class="field" name="email" placeholder="something@something.com" required /></label>
+        <label id="number-label">Enter your age (years): <input type="number" id="number" class="field" name="age" min="13" max="120" placeholder="Age" /></label>
+      </fieldset>
+      <fieldset>
+        <label>What is your work status?
+          <select id="dropdown" class="field" name="work-status">
+            <option value="">Select one:</option>
+            <option value="1">Working full time</option>
+            <option value="2">Working part time</option>
+            <option value="3">Student</option>
+            <option value="4">Retired</option>
+            <option value="5">Unemployed</option>
+            <option value="6">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Do you like me?
+          <label><input type="radio" class="inline" name="like" value="yes" /> Yes</label>
+          <label><input type="radio" class="inline" name="like" value="no" /> No</label>
+          <label><input type="radio" class="inline" name="like" value="maybe" /> Maybe</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>What foods do you like?</label>
+        <label>Please select all that apply:
+          <label><input type="checkbox" class="inline" name="pizza" value="pizza" /> Pizza</label>
+          <label><input type="checkbox" class="inline" name="mac-and-cheese" value="mac-and-cheese" /> Mac and Cheese</label>
+          <label><input type="checkbox" class="inline" name="chocolate" value="chocolate" /> Chocolate</label>
+          <label><input type="checkbox" class="inline" name="crab-dip" value="crab-dip" /> Crab dip</label>
+          <label><input type="checkbox" class="inline" name="spaghetti" value="spaghetti" /> Spaghetti</label>
+          <label><input type="checkbox" class="inline" name="steak" value="steak" /> Steak</label>
+          <label><input type="checkbox" class="inline" name="healthy" value="healthy" /> Healthy foods</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Additional comments: </label>
+        <textarea rows="3" cols="30" class="field" placeholder="Thoughts..."></textarea>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+    <br>
+  </body>
+</html>
