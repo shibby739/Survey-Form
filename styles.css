@@ -16,6 +16,7 @@ body {
 h1, p {
   margin: 20px auto;
   text-align: center;
+  color: white;
 }
 
 form {
@@ -26,7 +27,7 @@ form {
   padding: 0.5em 3em;
   border: 1px solid rgba(127, 127, 127, 0.7);
   border-radius: 5px;
-  background-color: rgba(127, 127, 255, 0.9);
+  background-color: rgba(175, 185, 240, 0.9);
 }
 
 fieldset {
